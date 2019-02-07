@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Главная сайта -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Главная страница</title>
+    <meta name="keywords" content="проект, работа, выполнить, проектирование">
+    <meta name="description" content="Сервис по поиску исполнителей проектных, монтажных и строительных работ">
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/icon_sphera.css">
+    <link rel="stylesheet" href="style/animate.min.css">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <!-- Шапка страницы  -->
+    <div class="content">
+        <div class="headerMenu default">
+            <div class="headerMenu__leftBlock">
+                <ul class="headerMenu__spisok">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Создать</span></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <a class="headerMenu__url dropdown-item" href="add.html" title="Заказать выполнение проекта">Заказ на проектирование</a>
+                                <a class="headerMenu__url dropdown-item disabled" href="#" title="Заказать выполнение монтажных работ">Заказ на монтажные работы</a>
+                                <a class="headerMenu__url dropdown-item disabled" href="#" title="Заказать выполнение строительных работ">Заказ на строительные работы</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Все заказы</span></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="headerMenu__url  dropdown-item" href="project/index.html" title="Все заказы на выполнение проектных работ">Проектирование</a>
+                                <a class="headerMenu__url  dropdown-item disabled" href="#" title="Все заказы на выполнение монтажных работ">Монтажные работы</a>
+                                <a class="headerMenu__url  dropdown-item disabled" href="#" title="Все заказы на выполнение строительных работ">Строительные работы</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="headerMenu__url" title="Посмотреть всех зарегистрированных исполнителей">Исполнители</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerMenu__centerBlock">
+
+            </div>
+            <div class="headerMenu__rightBlock">
+                <div class="headerMenu__leftBlock">
+                    <ul class="headerMenu__spisok">
+                        <li>
+                            <a href="#" class="headerMenu__url" title="Вход зарегистрированным пользователям">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Конец шапки страницы  -->
+
+        <div class="freeservice">
+            <div class="freeservice__info">
+                <div class="freeservice__title">
+                    <h1 style="text-align: center;">Бесплатный сервис поиска специалистов</h1>
+                    <p>Разместите заявку и узнайте цены от исполнителей.<br>Выбирайте исполнителей по цене и отзывам.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="typeTask">
+        <div class="typeTask__items d-flex flex-wrap justify-content-around">
+            <div class="typeTask__item col-lg-4 col-md-4 col-12" id="taskProject">
+                <a href="project/index.html" class="typeTask__href" title="Перейти к объявлениям по проектированию">
+                    <div class="typeTask__img">
+                        <span class="typeTask__icon_project"></span>
+                    </div>
+                    <div class="typeTask__name">Проектирование</div>
+                </a>
+            </div>
+            <div class="typeTask__item col-lg-4 col-md-4 col-12" id="taskMontage">
+                <a href="#" class="typeTask__href" title="На данный момент раздел не активен">
+                    <div class="typeTask__img">
+                        <span class="typeTask__icon_montage"></span>
+                    </div>
+                    <div class="typeTask__name">Монтажные работы</div>
+                </a>
+            </div>
+            <div class="typeTask__item col-lg-4 col-md-4 col-12" id="taskBuild">
+                <a href="#" class="typeTask__href" title="На данный момент раздел не активен">
+                    <div class="typeTask__img">
+                        <span class="typeTask__icon_str"></span>
+                    </div>
+                    <div class="typeTask__name">Строительные работы</div>
+                </a>
+            </div>
+        </div>
+
+
+        <!--  Блок разделов по Проектированию  -->
+        <div class="blockTypeWork">
+            <div class="typeTask_project">
+                <div class="categoryItems categoryItems__main">
+                    <ul class="d-flex flex-wrap">
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconAVT"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по автоматизации и связи">Автоматизация и связь</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconARH"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по архитектуре">Архитектура</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconVIK"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по водоснабжению и канализации">Водоснабжение \ Канализация</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconOV"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по воздухоснабжению">Воздухоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconGST"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по разработке генерального плана">Генплан</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconPOJ"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Проекты по пожарной безопасности">Пожарная безопасность</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSMT"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по разработке смет">Сметное дело</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по разработке строительных разделов">Строительство</a>
+                        </li>
+                         <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconTM"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по теплоснабжению">Теплоснабжение и газоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconTEH"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по технологическим разделам">Технологии производств</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconHOL"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по разделу холодоснабжения">Холодоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconELE"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Объявления по электрической части проекта">Электроснабжение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--  Блок разделов по монтажу  -->
+            <div class="typeTask__montage">
+                <div class="categoryItems categoryItems__main">
+                    <ul class="d-flex flex-wrap">
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconAVT"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по автоматизации и связи">Автоматизация и связь</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconVIK"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по водоснабжению и канализации">Водоснабжение \ Канализация</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconOV"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по воздухоснабжению">Воздухоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconPOJ"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по пожарной безопасности">Пожарная безопасность</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы в строительстве">Строительство</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconTM"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по теплоснабжению">Теплоснабжение и газоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconHOL"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по холодоснабжению">Холодоснабжение</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconELE"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Монтажные работы по электрике">Электроснабжение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--  Блок разделов по строительству  -->
+            <div class="typeTask__building">
+                <div class="categoryItems categoryItems__main">
+                    <ul class="d-flex flex-wrap">
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Крупное строительство">Крупное строительство</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Строительство домов">Строительство домов</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Отделочные работы">Отделочные работы</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Сварочные работы">Сварочные работы</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Фундаментные работы">Фундаментные работы</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Кровельные и фасадные работы">Кровельные и фасадные работы</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Установка окон">Установка окон</a>
+                        </li>
+                        <li class="categoryItems__item col-lg-3 col-md-6 col-12">
+                            <p class="categoryItems__icon categoryItems__iconSTR"></p>
+                            <a href="project/razdel.html" class="categoryItems__url" title="Другое">Другое</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Подвал -->
+    <section class="footer">
+        <div class="d-flex justify-content-center row">
+            <div class="footer__column col-md-4 col-sm-6 col-12">
+                <h3 class="footer__blockTitle">ИСПОЛНИТЕЛЮ</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__url" title="Вход зарегистрированным пользователям">Авторизация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__url" title="Страница всех заказов">Все заказы</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-md-4 col-sm-6 col-12">
+                <h3 class="footer__blockTitle">ЗАКАЗЧИКУ</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="add.html" class="footer__url" title="Создать заказ на выполнение работы">Создать задание</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__url" title="Посмотреть всех зарегистрированных исполнителей">Все исполнители</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copiright">
+            <div class="">
+                <div class="col-lg-3 col-md-4 col-7 m-auto copyright_text">
+                    &copy; 2018 Биржа труда<br>Все права защищены <br>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Подвал END -->
+
+
+
+
+    <!-- Загружаемое в конце   -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="js/jquery.dotdotdot.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    </div>
+
+</body>
+
+</html>

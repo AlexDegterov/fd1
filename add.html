@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- Добавление заказа -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Добавление заказа на выполнение работ</title>
+    <meta name="keywords" content="проект, работы, монтажные, строительные, проектирование" />
+    <meta name="description" content="Сервис по поиску исполнителей проектных работ" />
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/icon_sphera.css">
+    <link rel="stylesheet" href="style/animate.min.css">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+
+    <!-- Шапка страницы  -->
+    <div class="content">
+        <div class="headerMenu default">
+            <div class="headerMenu__leftBlock">
+                <ul class="headerMenu__spisok">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Создать</span></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <a class="headerMenu__url dropdown-item" href="add.html" title="Заказать выполнение проекта">Заказ на проектирование</a>
+                                <a class="headerMenu__url dropdown-item disabled" href="#" title="Заказать выполнение монтажных работ">Заказ на монтажные работы</a>
+                                <a class="headerMenu__url dropdown-item disabled" href="#" title="Заказать выполнение строительных работ">Заказ на строительные работы</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Все заказы</span></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="headerMenu__url  dropdown-item" href="index.html" title="Все заказы на выполнение проектных работ">Проектирование</a>
+                                <a class="headerMenu__url  dropdown-item disabled" href="#" title="Все заказы на выполнение монтажных работ">Монтажные работы</a>
+                                <a class="headerMenu__url  dropdown-item disabled" href="#" title="Все заказы на выполнение строительных работ">Строительные работы</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="headerMenu__url" title="Посмотреть всех зарегистрированных исполнителей">Исполнители</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="headerMenu__centerBlock">
+
+            </div>
+            <div class="headerMenu__rightBlock">
+                <div class="headerMenu__leftBlock">
+                    <ul class="headerMenu__spisok">
+                        <li>
+                            <a href="#" class="headerMenu__url" title="Вход зарегистрированным пользователям">Войти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Конец шапки страницы  -->
+
+
+        <!--  Хлебные крошки   -->
+        <div class="breadcrumbBT row col-lg-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Добавление заказа</li>
+                </ol>
+            </nav>
+        </div>
+        <!--  Конец Хлебные крошки   -->
+
+
+
+        <!--  Центральная часть создания объявления      -->
+        <div class="container">
+
+            <div class="taskCreate__page-title">
+                <h1>Создайте задание</h1>
+            </div>
+            <form id="form__task-create" name="add_task" action="#" method="post" enctype="multipart/form-data">
+                <div class="taskCreate__container d-flex row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="">
+                            <label class="taskCreate__type-Task-Title" for="typeTask">Выберите категорию</label>
+                        </div>
+                        <select class="custom-select taskCreate__typeTaskSelect" name="typeTask" id="typeTask">
+                            <option selected class="taskCreate__typeTaskSelect_selected">Выберите категорию</option>
+                            <option value="1">Проектные работы</option>
+                            <option value="2">Монтажные работы</option>
+                            <option value="3">Строительные работы</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="">
+                            <label class="taskCreate__type-Task-Title" for="typePodTask">Выберите подкатегорию</label>
+                        </div>
+                        <select class="custom-select taskCreate__typePodTaskSelect" disabled name="typePodTask" id="typePodTask">
+                            <option selected class="taskCreate__typeTaskSelect_selected">Выберите подкатегорию</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="taskCreate__container row">
+                    <div class="col-12">
+                        <label class="taskCreate__type-Task-Title" for="taskTitle">Заголовок задания</label>
+                        <div class="taskCreate__blockInput">
+                            <input name="taskTitle" class="taskCreate__input" placeholder="Кратко опишите задание" value="" autocomplete="off" type="text">
+                        </div>
+                        <div class="taskCreate__hint">
+                            Напишите заголовок задания. Например: выполнить проект внутреннего электроснабжения цеха
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="taskCreate__container d-flex row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="">
+                            <label class="taskCreate__type-Task-Title" for="typeTask">Выберите регион</label>
+                        </div>
+                        <select name="as_Region" class="taskCreate__typeTaskSelect" onchange="RegionChange(this)" id="sel2">
+                            <option value="no_select">-- выбрать из списка --</option>
+                            <option value="Moskva">Москва</option>
+                            <option value="Sankt-Peterburg">Санкт-Петербург</option>
+                            <option value="Amursk-region">Амурская область</option>
+                            <option value="Arkhangelsk-region">Архангельская область</option>
+                            <option value="Astrakhan-region">Астраханская область</option>
+                            <option value="Belgorod-region">Белгородская область</option>
+                            <option value="Bryansk-region">Брянская область</option>
+                            <option value="Vladimir-region">Владимирская область</option>
+                            <option value="Volgograd-region">Волгоградская область</option>
+                            <option value="Vologda-region">Вологодская область</option>
+                            <option value="Voronejz-region">Воронежская область</option>
+                            <option value="Ivanovsk-region">Ивановская область</option>
+                            <option value="Irkutsk-region">Иркутская область</option>
+                            <option value="Kaliningrad-region">Калининградская область</option>
+                            <option value="Kaluga-region">Калужская область</option>
+                            <option value="Kemerovo-region">Кемеровская область</option>
+                            <option value="Kirov-region">Кировская область</option>
+                            <option value="Kostroma-region">Костромская область</option>
+                            <option value="Kurgan-region">Курганская область</option>
+                            <option value="Kursk-region">Курская область</option>
+                            <option value="Leningrad-region">Ленинградская область</option>
+                            <option value="Lipetsk-region">Липецкая область</option>
+                            <option value="Magadan-region">Магаданская область</option>
+                            <option value="Moskva-region">Московская область</option>
+                            <option value="Murmansk-region">Мурманская область</option>
+                            <option value="Nijni-Novgorod-region">Нижегородская область</option>
+                            <option value="Novgorod-region">Новгородская область</option>
+                            <option value="Novosibirsk-region">Новосибирская область</option>
+                            <option value="Omsk-region">Омская область</option>
+                            <option value="Orenburg-region">Оренбургская область</option>
+                            <option value="Orel-region">Орловская область</option>
+                            <option value="Penza-region">Пензенская область</option>
+                            <option value="Pskov-region">Псковская область</option>
+                            <option value="Rostov-region">Ростовская область</option>
+                            <option value="Ryazan-region">Рязанская область</option>
+                            <option value="Samara-region">Самарская область</option>
+                            <option value="Saratov-region">Саратовская область</option>
+                            <option value="Sakhalin-region">Сахалинская область</option>
+                            <option value="Sverdlovsk-region">Свердловская область</option>
+                            <option value="Smolensk-region">Смоленская область</option>
+                            <option value="Tambov-region">Тамбовская область</option>
+                            <option value="Tver-region">Тверская область</option>
+                            <option value="Tomsk-region">Томская область</option>
+                            <option value="Tula-region">Тульская область</option>
+                            <option value="Tyumen-region">Тюменская область</option>
+                            <option value="Ulyanovsk-region">Ульяновская область</option>
+                            <option value="Chelyabinsk-region">Челябинская область</option>
+                            <option value="Yaroslavl-region">Ярославская область</option>
+                            <option value="Altai-krai">Алтайский край</option>
+                            <option value="Zabaikalski-krai">Забайкальский край</option>
+                            <option value="Kamchatka-krai">Камчатский край</option>
+                            <option value="Krasnodarski-krai">Краснодарский край</option>
+                            <option value="Krasnoyarski-krai">Красноярский край</option>
+                            <option value="Permski-krai">Пермский край</option>
+                            <option value="Primorski-krai">Приморский край</option>
+                            <option value="Stavropolski-krai">Ставропольский край</option>
+                            <option value="Khabarovsk-krai">Хабаровский край</option>
+                            <option value="Adygea-republic">Республика Адыгея</option>
+                            <option value="Altai-republic">Республика Алтай</option>
+                            <option value="Bashkortostan-republic">Республика Башкортостан</option>
+                            <option value="Buryatia-republic">Республика Бурятия</option>
+                            <option value="Dagestan-republic">Республика Дагестан</option>
+                            <option value="Ingushetia-republic">Республика Ингушетия</option>
+                            <option value="Kabardino-Balkaria-republic">Кабардино-Балкарская Республика</option>
+                            <option value="Kalmykia-republic">Республика Калмыкия</option>
+                            <option value="Karachay-Cherkessia-republic">Карачаево-Черкесская Республика</option>
+                            <option value="Karelia-republic">Республика Карелия</option>
+                            <option value="Komi-republic">Республика Коми</option>
+                            <option value="Krym-republic">Республика Крым</option>
+                            <option value="Mari-El-republic">Республика Марий Эл</option>
+                            <option value="Mordovia-republic">Республика Мордовия</option>
+                            <option value="Sakha-republic">Республика Саха (Якутия)</option>
+                            <option value="Ossetia-Alania-republic">Республика Северная Осетия — Алания</option>
+                            <option value="Tatarstan-republic">Республика Татарстан</option>
+                            <option value="Tyva-republic">Республика Тыва</option>
+                            <option value="Khakassia-republic">Республика Хакасия</option>
+                            <option value="Udmurtia-republic">Удмуртская Республика</option>
+                            <option value="Chechnya-republic">Чеченская Республика</option>
+                            <option value="Chuvashia-republic">Чувашская Республика</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="">
+                            <label class="taskCreate__type-Task-Title" for="as_City">Укажите город</label>
+                        </div>
+                        <input name="as_City" id="as_City" value="-- сначала выберите регион --" class="inpText ac_input taskCreate__citySelect" disabled autocomplete="off" type="text">
+                    </div>
+                </div>
+
+
+                <div class="taskCreate__container row">
+                    <div class="col-12">
+                        <label class="taskCreate__type-Task-Title" for="taskDetail">Подробное описание задания</label>
+                        <div class="taskCreate__blockInput">
+                            <textarea name="taskDetail" class="taskCreate__textarea" placeholder="Подробно опишите задание" rows="5" value="" autocomplete="off" type="text"></textarea>
+                        </div>
+                        <div class="taskCreate__hint">
+                            Подробно опишите какие проектно-изыскательские работы необходимо выполнить
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- Подвал -->
+    <section class="footer">
+        <div class="d-flex justify-content-center row">
+            <div class="footer__column col-md-4 col-sm-6 col-12">
+                <h3 class="footer__blockTitle">ИСПОЛНИТЕЛЮ</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__url" title="Вход зарегистрированным пользователям">Авторизация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__url" title="Страница всех заказов">Все заказы</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column col-md-4 col-sm-6 col-12">
+                <h3 class="footer__blockTitle">ЗАКАЗЧИКУ</h3>
+                <ul class="footer__list">
+                    <li>
+                        <a href="add.html" class="footer__url" title="Создать заказ на выполнение работы">Создать задание</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__url" title="Посмотреть всех зарегистрированных исполнителей">Все исполнители</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copiright">
+            <div class="">
+                <div class="col-lg-3 col-md-4 col-7 m-auto copyright_text">
+                    &copy; 2018 Биржа труда<br>Все права защищены <br>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Подвал END -->
+
+
+
+
+    <!-- Загружаемое в конце   -->
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script src="js/jquery_old.js"></script>
+    <script src="js/jquery.autocomplete.js"></script>
+
+    <script src="js/addtask.js"></script>
+    
+</body>
+
+</html>
